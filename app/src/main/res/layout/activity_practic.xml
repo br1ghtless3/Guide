@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background4"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/chooseTopic"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:text="Выберите тему теста"
+            android:textColor="#CC000000"
+            android:textSize="28sp"
+            android:textStyle="normal" />
+
+    <LinearLayout
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/chooseTopic"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:weightSum="2">
+
+        <LinearLayout
+                android:id="@+id/orfoep"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_start"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Орфоэпия"
+                    android:textColor="#CC000000"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/paronic"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_start"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Паронимы"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#CC000000"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startquiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_1"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_back_light"
+            android:text="ПЕРЕЙТИ!"
+            android:textColor="#CC000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+</RelativeLayout>

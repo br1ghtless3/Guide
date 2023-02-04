@@ -5,16 +5,40 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".QuizAct"
+        tools:context=".Theory"
         android:orientation="vertical"
         android:background="@drawable/background4">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/strelka" />
+
+        <TextView
+                android:id="@+id/nameTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello world"
+                android:textColor="#CC000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+    </RelativeLayout>
 
     <TextView
             android:id="@+id/question"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="-15dp"
             android:background="@drawable/round_back_white_10"
             android:elevation="1dp"
             android:gravity="center"
@@ -23,20 +47,21 @@
             android:text="1/10"
             android:textColor="#CC000000"
             android:textSize="18sp"
-            android:textStyle="normal" />
+            android:textStyle="normal"
+            />
 
     <TextView
             android:id="@+id/quis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="-20dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginTop="-20dp"
             android:background="@drawable/round_back_light"
             android:gravity="center"
             android:minHeight="100dp"
             android:padding="20dp"
-            android:text="В одном из приведённых ниже слов допущена ошибка в постановке ударения: НЕВЕРНО выделена буква, обозначающая ударный гласный звук. Найдите это слово."
+            android:text="Heloo gear"
             android:textColor="#CC000000"
             android:textSize="20sp"
             android:textStyle="normal" />
@@ -44,12 +69,13 @@
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/oneotvet"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/backround_otvet"
-            android:text="ненАдолго"
+            android:text="Optionone"
+            android:textStyle="normal"
             android:textAllCaps="false"
             android:textSize="20sp"
             android:textColor="#CC000000" />
@@ -57,12 +83,12 @@
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/twootvet"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/backround_otvet"
-            android:text="Иксы"
+            android:text="Two otvet"
             android:textStyle="normal"
             android:textAllCaps="false"
             android:textSize="20sp"
@@ -71,12 +97,12 @@
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/threeotvet"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/backround_otvet"
-            android:text="вручИт"
+            android:text="Three otvet"
             android:textStyle="normal"
             android:textAllCaps="false"
             android:textSize="20sp"
@@ -85,25 +111,26 @@
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/foureotvet"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/backround_otvet"
-            android:text="снятА"
+            android:text="Four otvet"
             android:textStyle="normal"
             android:textAllCaps="false"
             android:textSize="20sp"
             android:textColor="#CC000000" />
+
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/fiveotvet"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/backround_otvet"
-            android:text="понялА"
+            android:text="Five otvet"
             android:textStyle="normal"
             android:textAllCaps="false"
             android:textSize="20sp"
@@ -115,10 +142,10 @@
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/round_back_light"
             android:text="Дальше"
             android:textStyle="normal"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textColor="#CC000000" />
 </LinearLayout>
